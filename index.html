@@ -1,58 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolia</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <div id="hamburger-menu">
-      <button class="hamburger-button"> ☰ </button>
-      <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="./portfolia.html">Portfolia</a>
-          <a href="./Contact.html">Contact Me</a>
-      </div>
-   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sensee Jangaba Personal Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div><main>
-      <img
-      src="./Images/me.png"
-      alt="pic of me"
-      style="width: 180px; height: 200px"
-      border-radius
-      
-       <div><span><p>Welcome to My Website! <br />
-        My name is Sensee, I am an aspiring Web Developer & Designer based in
-        Minneapolis, Minnesota.
-    
-    <h3><font color="green">I build Website, Apps, Brochers, Flyers and more</font color></h3>
-        I enjoyed helping people turn complex problems into simple, beautiful
-        responsive websites and apps the works.<br /></p></span></div>
-    </main>
-    </div>
-    <hr
-     <h3>Check out my projects</h3>
-     *********COMING SOON*********
-    <hr    
-     <p><h3>Contact Me</h3>
-    Leave me a line or two about your project and I will get back to within 24 hours.<br />
- <form action=”mailto:senseejangaba@gmail.com”
-method="POST"
-enctype="multipart/form-data"
-name="EmailForm">
-    Name:<br>
-    <input type="text" size="19" name="Contact-Name"><br><br>
-    Email:<br>
-    <input type="email" name="Contact-Email"><br><br> 
-    Message:<br> 
-    <textarea name="Contact-Message" rows="6″ cols="20″>
-    </textarea><br><br> 
-    <button type="submit" value="Submit">Send</button>
-    </div>
-    <hr
-  </body>
+    <header>
+      <div class="container">
+        <nav class="my-nav">
+          <input type="checkbox" id="nav-check" />
+          <div class="logo">
+            <a href="#">
+              <h2><span>W</span>ebSAP</h2>
+              <span>Web Dev & Design</span></a
+            >
+          </div>
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#portfolio">My Portfolio</a></li>
+            <li><a href="#contact" class="book">Get In Touch</a></li>
+          </ul>
 
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="container">
+        <div class="heroInner">
+          <div class="heroContent">
+            <h1><span6>Hi! My name is Sensee</span6></h1>
+            <span1>Freelance Web Developer & Designer</span1>
+            <span2
+              >Based in Minneapolis, Minnesota<br />I craft beautiful digital
+              experiences. With a blend of creativity and functionality, I
+              specialized in creating websites and design services for
+              individuals and small businesses. My designs are high quality,
+              user friendly and affordable.<br />
+              Let me elevate your online presence and drive results.</span2
+            >
+          </div>
+          <div class="heroImage">
+            <img src="Images/hero.jpeg" alt="picture of sensee" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p>
+        <span5
+          >Leave me a line or two about your project and I will gt back to
+          you.</span5
+        >
+      </p>
+      <div class="formcarry-container">
+        <form
+          action="https://formspree.io/f/mvoedzyv"
+          method="POST"
+          class="formcarry-form"
+        >
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="fullName" required />
+
+          <label for="email">Your Email Address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Your Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="heading">
+          <h2><span3>Portfolio</span3><br /></h2>
+          <span7>(Under Construction)</span7>
+        </div>
+
+        <div class="portfolioGrid">
+          <div class="portfolioBox">
+            <img src="./images/kenny-eliason-y_6rqStQBYQ-unsplash.jpg" alt="" />
+          </div>
+          <div class="portfolioBox">
+            <img src="./images/clay-banks-ajFZ2q_CjvQ-unsplash.jpg" alt="" />
+          </div>
+          <div class="portfolioBox">
+            <img src="./images/kid-playing-chess-with-father.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="mainFooter">
+          <div class="fsocial">
+            <a href="mailto:senseejangaba@gmail.com"
+              ><i class="fa-sharp fa-regular fa-envelope"></i
+            ></a>
+            <a href="https://github.com/Sjangaba/html.portfolio"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href=""> <i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <div class="ftext">2024 Design by Sen</div>
+          <div class="backtotop"><a href="#hero">Back To Top</a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
